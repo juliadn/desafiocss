@@ -22,59 +22,145 @@ Algumas informações úteis e dicas:
   - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
  */
 
-html,
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-/* Você pode usar o CSS comentado abaixo, se ajudar */
-/* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
-/* .btn {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-
-  overflow: hidden;
-
-  border-width: 0;
-  outline: none;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-
-  background-color: #f7d736;
-
-  transition: background-color 0.3s;
-}
-
-.btn > * {
-  position: relative;
-}
-
-.btn:before {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  display: block;
-  width: 0;
-  padding-top: 0;
-
-  border-radius: 100%;
-
-  background-color: rgba(236, 240, 241, 0.3);
-
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.btn:active:before {
-  width: 120%;
-  padding-top: 120%;
-
-  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
-} */
+ html,
+ body {
+   font-family: "Roboto", sans-serif;
+ }
+ 
+ /* Você pode usar o CSS comentado abaixo, se ajudar */
+ /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
+ .btn {
+   position: relative;
+   display: block;
+   padding: 10px 15px;
+   width: -webkit-fill-available;
+   overflow: hidden;
+ 
+   border-width: 0;
+   outline: none;
+   border-radius: 2px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+ 
+   background-color: #f7d736;
+ 
+   transition: background-color 0.3s;
+ }
+ 
+ .btn > * {
+   width: 100%;
+ }
+ 
+ .btn:before {
+   content: "";
+ 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+ 
+   display: block;
+   width: 0;
+   padding-top: 0;
+ 
+   border-radius: 100%;
+ 
+   background-color: rgba(236, 240, 241, 0.3);
+ 
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+ }
+ 
+ .btn:active:before {
+   width: 120%;
+   padding-top: 120%;
+ 
+   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+ }
+ 
+ .appbar {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   background-color: #efde38;
+   color: black;
+   font-weight: bold;
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ 
+ }
+ 
+ .logo{
+   width: 10rem;
+   height: 5rem;
+   margin: 10px;
+ }
+ 
+ .container{
+   display:flex;
+   flex-direction: column;
+ }
+ 
+ .form-card{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   color: black;
+   width: 30%;
+   margin-top: 3rem;
+   padding: 10px;
+   border-radius: 10px;
+   align-self: center;
+ }
+ 
+ .form-card-title{
+   font-family: 'Roboto', sans-serif;
+   width: -webkit-fill-available;
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 1rem;
+   border: white;
+   font-weight: bold;
+   color: #000;
+ }
+ 
+ .autoresize{
+   font-family: 'Roboto', sans-serif;
+   resize: none;
+   width: -webkit-fill-available;
+   border: white;
+ 
+ }
+ 
+ .card-container{
+   margin-top: 4rem;
+   margin-left: 5rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+ }
+ 
+ .card {
+   margin: 0.5rem;
+   width: 20rem;
+   height: 10rem;
+ }
+ 
+ .card-title{
+   font-family: 'Permanent Marker', cursive;
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin: 0.5rem;
+ }
+ 
+ .card-content{
+   font-family: 'Permanent Marker', cursive;
+   font-size: 1rem;
+   margin: 0.5rem;
+   color: 51504e;
+ }
