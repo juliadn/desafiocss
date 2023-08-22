@@ -34,13 +34,16 @@ Algumas informações úteis e dicas:
    display: block;
    padding: 10px 15px;
    width: -webkit-fill-available;
+   height: 3rem;
    overflow: hidden;
  
    border-width: 0;
    outline: none;
    border-radius: 2px;
    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
- 
+   font-weight: bold;
+   font-size: large;
+
    background-color: #f7d736;
  
    transition: background-color 0.3s;
@@ -84,10 +87,10 @@ Algumas informações úteis e dicas:
    flex-direction: row;
    align-items: center;
    justify-content: flex-start;
-   background-color: #efde38;
+   background-color: #f7d735;
    color: black;
-   font-weight: bold;
-   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+   font-size: x-large;
+   box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.16), 3px 6px 9px rgba(0, 0, 0, 0.23);
  
  }
  
@@ -120,12 +123,11 @@ Algumas informações úteis e dicas:
  .form-card-title{
    font-family: 'Roboto', sans-serif;
    width: -webkit-fill-available;
-   font-size: 2rem;
+   font-size: xx-large;
    font-weight: bold;
    margin-bottom: 1rem;
    border: white;
-   font-weight: bold;
-   color: #000;
+   color: black;
  }
  
  .autoresize{
@@ -133,34 +135,78 @@ Algumas informações úteis e dicas:
    resize: none;
    width: -webkit-fill-available;
    border: white;
+   font-size: large;
  
  }
  
  .card-container{
    margin-top: 4rem;
-   margin-left: 5rem;
+   margin-left: 2rem;
+   margin-right: 2rem;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   align-items: center;
    flex-wrap: wrap;
  }
  
  .card {
    margin: 0.5rem;
-   width: 20rem;
-   height: 10rem;
+   width: 26rem;
+   height: 16rem;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
  }
  
  .card-title{
    font-family: 'Permanent Marker', cursive;
-   font-size: 1.5rem;
+   font-size: xx-large;
    font-weight: bold;
    margin: 0.5rem;
+   padding: 1rem;
+   text-align: left;
+   align-self: first baseline;
  }
  
  .card-content{
    font-family: 'Permanent Marker', cursive;
-   font-size: 1rem;
+   font-size: 1.6rem;
+   height: -webkit-fill-available;
+
+   display: flex;
+   flex-direction: row;
+   padding: 1rem;
    margin: 0.5rem;
-   color: 51504e;
+   color: #4c4c4c;
+   
+   align-items: center;
+   justify-content: center;
+   text-align: center;
  }
+
+ .card-color-1{
+   background-color: #fae890;
+   rotate: -2deg;
+ }
+
+ .card-color-2{
+  background-color: #ef89ba;
+  rotate: 1deg;
+}
+
+.card-color-3{
+  background-color: #9de0f5;
+  rotate: 0deg;
+}
+
+.card-color-4{
+  background-color: #ead3a7;
+  rotate: -2deg;
+}
+
+.card-color-5 {
+  background-color: #abe9c1;
+  rotate: -3deg;
+}
