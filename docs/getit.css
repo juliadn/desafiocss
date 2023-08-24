@@ -188,25 +188,40 @@ Algumas informações úteis e dicas:
 
  .card-color-1{
    background-color: #fae890;
-   rotate: -2deg;
  }
 
  .card-color-2{
   background-color: #ef89ba;
-  rotate: 1deg;
 }
 
 .card-color-3{
   background-color: #9de0f5;
-  rotate: 0deg;
 }
 
 .card-color-4{
   background-color: #ead3a7;
-  rotate: -2deg;
 }
 
 .card-color-5 {
   background-color: #abe9c1;
-  rotate: -3deg;
+}
+
+.card-rotation-1{
+  transform: rotate(-2deg);
+}
+
+.card-rotation-2{
+  transform: rotate(1deg);
+}
+
+.card-rotation-3{
+  transform: rotate(0deg);
+}
+
+.card-rotation-4{
+  transform: rotate(-2deg);
+}
+
+.card-rotation-5{
+  transform: rotate(-3deg);
 }
